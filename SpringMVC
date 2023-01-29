@@ -1,2 +1,25 @@
-什么是SpringMVC?
+1什么是SpringMVC?
+  基于MVC开发模式的框架，用来优化控制器，是Spring家族的一员，也具备Ioc 和 AOP
   
+什么是MVC?
+  是一种开发模式,它是模型视图控制器的简称.所有的web应用都是基于MVC开发
+    M:模型层，包含实体类，业务逻辑层，数据访问层
+    v:视图层,html,javaScript,vue等都为视图层，用来显示数据
+    c:控制器,它是用来接收客户端的请求,并返回响应到客户端的组件,Servlet就是组件
+    
+2.SpringMVc框架的优点
+  1)轻量级，基于Mvc的框架
+  2)易于上手,容易理解,功能强大
+  3)它具备IOC和AOP
+  4)完全基于注解开发
+  
+3.基于注解的springMvc框架开发的步聚
+  1)新建项目，选择webapp模板.
+  2)修改目录,添加缺失的test,java,resources(两套),并修改目录属性
+  3)修改pom.xm1文件，添加SpringMVc的依赖，添加Servlet的依赖
+  4)添加springmvc.xm1配置文件，指定包扫描，添加视图解析器
+  5)除web.xm1文件,新建web.xm1
+  6)在web.xm1文件中注册springMvc框架(所有的web请求都是基于servlet的)
+  7)删除index.jsp页面，并新建，发送请求给服务器
+  8)开发控制器(Servlet)，它是一个普通的类
+  9)添加tomcat进行测试功能
